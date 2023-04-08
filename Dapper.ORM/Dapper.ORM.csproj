@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net4.6.1;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
     <ApplicationIcon>dappericon.ico</ApplicationIcon>
-    <Version>1.0.0.2</Version>
+    <Version>1.0.0.3</Version>
     <Authors>MD FAISAL</Authors>
     <Company>Programming Palli</Company>
     <Copyright>2023 Programming Palli</Copyright>
@@ -12,8 +12,9 @@
     <PackageIconUrl />
     <RepositoryUrl>https://github.com/faisalcse1/Dapper.ORM</RepositoryUrl>
     <PackageTags>micro-orm;orm;dapper;dapper extension;</PackageTags>
-    <Description>A high performance Micro-ORM supporting SQL Server, PostgreSQL. This is the extension version for easy to configure and use.</Description>
-    <FileVersion>1.0.0.2</FileVersion>
+    <Description>A high performance Micro-ORM supporting SQL Server, My SQL Server, PostgreSQL. This is the extension version for easy to configure and use.</Description>
+    <FileVersion>1.0.0.3</FileVersion>
+    <AssemblyVersion>1.0.0.3</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
