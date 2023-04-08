@@ -29,7 +29,16 @@ namespace Dapper.ORM
             this._context = npgsqlContext;
         }
 
-        
+        /// <summary>
+        /// My SQL Database Configuration
+        /// </summary>
+        /// <param name="mySqlContext"></param>
+        public DapperContext(MySqlContext mySqlContext)
+        {
+            this._context = mySqlContext;
+        }
+
+
 
         /// <summary>
         /// Return a sequence of dynamic objects with properties matching the columns.
