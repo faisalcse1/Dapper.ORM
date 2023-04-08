@@ -29,6 +29,7 @@ namespace Dapper.ORM
             this._context = npgsqlContext;
         }
 
+        
 
         /// <summary>
         /// Return a sequence of dynamic objects with properties matching the columns.
