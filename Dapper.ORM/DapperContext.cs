@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Org.BouncyCastle.Asn1.Pkcs;
+using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 
@@ -11,6 +12,27 @@ namespace Dapper.ORM
         {
             this._context = context;
         }
+
+        /// <summary>
+        /// Database server configuration using connectionstring and database server name.
+        /// </summary>
+        /// <param name="connectionString"></param>
+        /// <param name="dbServer"></param>
+        public DapperContext(string connectionString, DatabaseServer dbServer = DatabaseServer.MySQL)
+        {
+            if (dbServer == DatabaseServer.MsSQL)
+            {
+                this._context = new SqlContext(connectionString);
+            }else if(dbServer == DatabaseServer.MySQL)
+            {
+                this._context = new MySqlContext(connectionString);
+            }
+            else if (dbServer == DatabaseServer.PostgreSQL)
+            {
+                this._context = new NpgsqlContext(connectionString);
+            }
+        }
+
         /// <summary>
         /// SQL Database Configuration
         /// </summary>
