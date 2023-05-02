@@ -23,7 +23,8 @@ namespace Dapper.ORM
             if (dbServer == DatabaseServer.MsSQL)
             {
                 this._context = new SqlContext(connectionString);
-            }else if(dbServer == DatabaseServer.MySQL)
+            }
+            else if(dbServer == DatabaseServer.MySQL)
             {
                 this._context = new MySqlContext(connectionString);
             }
