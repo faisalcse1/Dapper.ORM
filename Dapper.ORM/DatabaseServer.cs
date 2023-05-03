@@ -11,7 +11,5 @@ namespace Dapper.ORM
         MsSQL,
         MySQL,
         PostgreSQL,
-
-        
     }
 }

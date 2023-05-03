@@ -18,7 +18,7 @@ namespace Dapper.ORM
         /// </summary>
         /// <param name="connectionString"></param>
         /// <param name="dbServer"></param>
-        public DapperContext(string connectionString, DatabaseServer dbServer = DatabaseServer.MySQL)
+        public DapperContext(string connectionString, DatabaseServer dbServer = DatabaseServer.MsSQL)
         {
             if (dbServer == DatabaseServer.MsSQL)
             {
