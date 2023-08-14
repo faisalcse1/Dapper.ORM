@@ -32,6 +32,10 @@ namespace Dapper.ORM
             {
                 this._context = new NpgsqlContext(connectionString);
             }
+            else if (dbServer == DatabaseServer.Oracle)
+            {
+                this._context = new OracleContext(connectionString);
+            }
         }
 
         /// <summary>
@@ -59,6 +63,15 @@ namespace Dapper.ORM
         public DapperContext(MySqlContext mySqlContext)
         {
             this._context = mySqlContext;
+        }
+
+        /// <summary>
+        /// Oracle Database Configuration
+        /// </summary>
+        /// <param name="oracleContext"></param>
+        public DapperContext(OracleContext oracleContext)
+        {
+            this._context = oracleContext;
         }
 
 
